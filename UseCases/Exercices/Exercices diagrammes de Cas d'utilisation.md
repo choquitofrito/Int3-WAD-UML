@@ -6,7 +6,7 @@
   - [Modélisation de cas isolés](#modélisation-de-cas-isolés)
   - [Agence de voyages](#agence-de-voyages)
   - [Vidéo Club](#vidéo-club)
-  - [## Caisse enregistreuse](#-caisse-enregistreuse)
+  - [Caisse enregistreuse](#-caisse-enregistreuse)
   - [Établissement scolaire](#établissement-scolaire)
   - [Gestion de stock](#gestion-de-stock)
 
@@ -29,18 +29,14 @@
 Créez de nouveaux diagrammes (ou modifiez le diagramme existant) pour
 représenter chacune de ces situations.
 
-**3.1.** Inclure l\'authentification du client dans le diagramme précédant
-
-**3.2.** Considérez que le GAB offre au client l\'option de consulter son
+* **3.1.** Inclure l\'authentification du client dans le diagramme précédant
+* **3.2.** Considérez que le GAB offre au client l\'option de consulter son
     solde juste après avoir réalisé la retraite d\'argent
-
-**3.3.** Considérez que les clients qui ne portent pas une carte de notre
+* **3.3.** Considérez que les clients qui ne portent pas une carte de notre
     banque peuvent uniquement retirer de l\'argent du distributeur
-
-**3.4.** Rajouter un opérateur de la banque. Il doit pouvoir recharger le GAB
+* **3.4.** Rajouter un opérateur de la banque. Il doit pouvoir recharger le GAB
     de billets, récupérer les cartes avalées et récupérer les chèques
 
-<br>
 
 **4.** Modélisez l\'achat d\'un cd sur l\'internet en utilisant différents
     modes de paiement (Paypal et Carte bancaire). Le client peut
