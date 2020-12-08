@@ -1,5 +1,3 @@
-
-
 # Exercices diagrammes de Cas d\'utilisation #
 
 
