@@ -111,9 +111,7 @@ Cette étude de cas concerne un système simpliﬁé de réservation de vols
 pour une agence de voyages.
 
 Les interviews des experts métier auxquelles on a procédé ont permis de
-résumer leur
-
-Connaissance du domaine sous la forme des phrases suivantes :
+résumer leur connaissance du domaine sous la forme des phrases suivantes :
 
 1\. Des compagnies aériennes proposent différents vols.
 
