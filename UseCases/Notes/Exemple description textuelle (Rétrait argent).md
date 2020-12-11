@@ -60,6 +60,10 @@ l\'argent
 
 8.  Le montant est débité
 
+
+**Point d'extension: UC-05: Imprimer ticket**
+
+
 9.  Le client reçoit l\'argent
 
 ### Enchainements Alternatifs
