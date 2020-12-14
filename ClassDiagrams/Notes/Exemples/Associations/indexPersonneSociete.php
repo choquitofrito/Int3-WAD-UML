@@ -16,6 +16,11 @@
     echo "<br>Nom de la societé: ".$s->getNom();
     echo "<br>Nom de l'employé: ".$p->getNom();
 
+
+    $p->setEmployeur($s);
+
+    var_dump ($p);
+
     
     ?>
 </body>
