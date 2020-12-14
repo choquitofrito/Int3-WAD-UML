@@ -19,6 +19,13 @@
     $p->setEmployeur($s);
     var_dump ($p);
 
+
+    echo "<br>Voici la liste d'employés: ";
+    $s->addEmploye($p);
+    $s->addEmploye(new Personne("Zuli"));
+    $s->addEmploye(new Personne("Kelly"));
+    $s->addEmploye(new Personne("Alessia"));
+    $s->showEmployes();
     
     ?>
 </body>

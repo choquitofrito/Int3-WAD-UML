@@ -48,6 +48,10 @@ class Personne {
 
         return $this;
     }
+
+    public function showPersonne (){
+        print ("<br>Je suis " . $this->nom);
+    }
 }
 
 
