@@ -3,12 +3,12 @@
 class Local {
     public $nom;
 
-    public $pcs = []; // array de Pcs
 
-    // manque le videoproj
+    public $pcs = []; // array de Pcs
 
     public function __construct($nom){
         $this->nom = $nom;
+       
     }
 
     /**
@@ -57,12 +57,8 @@ class Local {
      */ 
     public function setPcs($pcs)
     {
-        if (count($pcs)<15){
-            throw new Exception ("pas assez de pcs dans la liste");
-        }
-        else {
-            $this->pcs = $pcs;
-        }
+        $this->pcs = $pcs;
+
         return $this;
     }
 }
