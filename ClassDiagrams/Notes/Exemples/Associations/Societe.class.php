@@ -58,6 +58,7 @@ class Societe {
     }
     public function showEmployes(){
         foreach ($this->employes as $employe) {
+            // echo get_class($employe);
             $employe->showPersonne();
         }
     }
