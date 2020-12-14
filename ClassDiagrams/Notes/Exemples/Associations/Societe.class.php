@@ -6,6 +6,8 @@ class Societe {
     // public List<Personne> employes;   // C#
     public $employes = []; // array d'objets Personne
 
+    // public $fondatrice; // objet de la classe Personne
+
     public function __construct($nom){
         $this->nom = $nom;
     }
