@@ -5,6 +5,7 @@ class Personne
     public $nom;
     public $adresse;
 
+
     public $employeurs = []; // liste d'objets Societe
 
     public function __construct($nom, $adresse)
@@ -79,4 +80,6 @@ class Personne
         // boucle infini, à ne pas faire : 
         // $societe->addEmploye($this); // rajouter un objet Personne (this) à la liste d'employés
     }
+
+
 }
