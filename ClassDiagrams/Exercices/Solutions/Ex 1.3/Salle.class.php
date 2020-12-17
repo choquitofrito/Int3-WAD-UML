@@ -54,4 +54,8 @@ class Salle
 
         return $this;
     }
+    // cette méthode est faite à la main et sert à rajouter une projection
+    public function addProjection ($projection){
+        $this->listeProjections[] = $projection;
+    }
 }
