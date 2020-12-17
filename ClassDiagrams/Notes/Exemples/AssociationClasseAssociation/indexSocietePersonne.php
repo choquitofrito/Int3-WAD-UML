@@ -12,8 +12,10 @@
 
     $s = new Societe ("Lola CO","Rue de la Paix");
     $p = new Personne ("Jeanne","Rue Haute");
+    $s->addEmploye($p);
+
     var_dump ($s);
-    var_dump ($p);
+
 
     ?>
 </body>
