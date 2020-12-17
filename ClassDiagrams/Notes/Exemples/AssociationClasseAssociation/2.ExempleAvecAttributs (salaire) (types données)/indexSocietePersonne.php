@@ -16,6 +16,10 @@
     $p1 = new Personne("Sophie","Rue Van AA");
     $p2 = new Personne("Manon", "Rue de la Poire");
 
+
+    var_dump ($p1);
+    var_dump ($p2);
+    
     $s1 = new Societe("PostWad CO", "Rue B");
 
     $c1 = new Contrat(3000, "01/03/2020", $p1, $s1);
@@ -24,6 +28,7 @@
     // $c1->setEmployeur($s1);
     $c2 = new Contrat(2500, "01/10/2020", $p2, $s1);
 
+    
     var_dump ($p1);
     var_dump ($p2);
     var_dump ($s1);

@@ -3,10 +3,10 @@
 
 class Societe {
 
-    public $nom;
-    public $adresse;
+    private $nom;
+    private $adresse;
 
-    public $contrats = []; // array d'objets Contrats
+    private $contrats = []; // array d'objets Contrats
 
     
     public function __construct($nom,$adresse) {
@@ -54,5 +54,9 @@ class Societe {
         $this->contrats = $contrats;
 
         return $this;
+    }
+
+    public function addContrat($unContrat){
+        $this->contrats[] = $unContrat;
     }
 }

@@ -5,12 +5,12 @@ include_once "Societe.class.php";
 
 
 class Contrat {
-    public $dateEmbauche;
-    public $salaire;
+    private $dateEmbauche;
+    private $salaire;
 
     // on a rajouté les types de données pour les définitions des propriétés
-    public Personne $employe; // un objet de la classe Personne
-    public Societe $employeur; // un objet de la classe Societe
+    private Personne $employe; // un objet de la classe Personne
+    private Societe $employeur; // un objet de la classe Societe
 
     public function __construct ($salaire, $dateEmbauche, Personne $employe, Societe $employeur){
         $this->salaire = $salaire;
@@ -18,6 +18,17 @@ class Contrat {
         // on affecte les dépendances
         $this->employe = $employe;
         $this->employeur = $employeur;
+
+        // créer les liens: rajouter le contrat à la liste de contrats de la Personne
+        // $employe->contrats[] = $this;
+        // on peut le faire aussi avec une méthode :
+        $employe->addContrat($this);
+        
+        // créer les liens: rajouter le contrat à la liste de contrats de la Societé
+        // $employeur->contrats[] = $this;
+        // on peut le faire aussi avec une méthode :
+        $employeur->addContrat($this);
+        
     }
 
     /**
