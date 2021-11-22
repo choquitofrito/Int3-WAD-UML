@@ -55,7 +55,7 @@ représenter chacune de ces situations.
     réparation. Si un mécanicien ne dispose pas des pièces nécessaires
     pour faire la réparation, il demande à un chef d\'atelier (aussi
     mécanicien) de les commander. Les commandes de pièces se trouvent
-    aussi dans le SI.
+    aussi dans le système informatique.
 
 <br>
 
