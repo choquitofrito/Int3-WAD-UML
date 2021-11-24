@@ -18,8 +18,16 @@
     // $monCinema->addFilm ($f2);
     
     $monCinema->addDiffusion (
-        new Diffusion ()
+        new Diffusion (
+            10,
+            new DateTime("2001-10-2"),
+            $monCinema,
+            $f1
+        )
     );
+    var_dump ($monCinema);
+
+    
 
 
 
