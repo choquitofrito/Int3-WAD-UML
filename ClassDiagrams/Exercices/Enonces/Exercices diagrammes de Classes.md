@@ -5,7 +5,7 @@ Exercices Diagramme de Classes
 
 Créez un diagramme de classes pour chaque situation :
 
-1.  Les utilisateurs et leur compte mail
+1.  Les utilisateurs et leur compte mail (un compte mail va appartenir à un seul utilisateur)
 
 2.  Les post d\'un forum et les utilisateurs
 
