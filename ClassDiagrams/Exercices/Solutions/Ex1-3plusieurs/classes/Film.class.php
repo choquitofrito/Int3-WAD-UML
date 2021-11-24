@@ -13,6 +13,11 @@ class Film {
         $this->id = $id;
         $this->title = $title;
     }
+    public function afficher(){
+        echo "<h4>Contenu du Film</h4>";
+        echo "<br>id:".$this->id;
+        echo "<br>titre:".$this->titre;
+    }
 
 
 }

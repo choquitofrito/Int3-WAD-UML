@@ -21,4 +21,12 @@ class Diffusion
         $this->cinema = $cinema;
         $this->film = $film;
     }
+    public function afficher(){
+        echo "<h4>Contenu de la Diffusion</h4>";
+        echo "<br>id:".$this->id;
+        echo "<br>dateDiffusion:".$this->dateDiffusion->format("Y-M-D");
+        $this->cinema->afficher();
+        $this->film->afficher();
+
+    }
 }

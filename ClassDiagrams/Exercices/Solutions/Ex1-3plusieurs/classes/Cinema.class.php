@@ -17,4 +17,10 @@ class Cinema {
     public function addDiffusion (Diffusion $diffusion){
         $this->cinemaDiffusions[] = $diffusion;
     }
+    public function afficher(){
+        echo "<h4>Contenu du Cinema</h4>";
+        echo "<br>id:".$this->id;
+        echo "<br>nom:".$this->nom;
+        echo "<br>ville:".$this->ville;
+    }
 }
