@@ -32,10 +32,15 @@
             $f1
         )
     );
+
+    // $f1->afficher();
+    // $monCinema->afficher();
+    $monCinema->afficherDiffusions();
+    
+
     // var_dump($monCinema);
 
-    var_dump($monCinema->cinemaDiffusions[0]);
-
+    
 
 
 

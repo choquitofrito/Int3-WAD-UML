@@ -23,4 +23,10 @@ class Cinema {
         echo "<br>nom:".$this->nom;
         echo "<br>ville:".$this->ville;
     }
+    public function afficherDiffusions (){
+        echo "<h3>Contenu des diffusions du Cinema</h3>";
+        foreach ($this->cinemaDiffusions as $uneDiffusion){
+            $uneDiffusion->afficher();
+        }
+    }
 }

@@ -4,14 +4,14 @@
 class Film {
 
     public int $id;
-    public string $title;
+    public string $titre;
 
     // implementer relation: les diffusions de ce Film, n'importe le Cinema
     public array $filmDiffusions = [];
 
-    public function __construct (int $id, string $title){
+    public function __construct (int $id, string $titre){
         $this->id = $id;
-        $this->title = $title;
+        $this->titre = $titre;
     }
     public function afficher(){
         echo "<h4>Contenu du Film</h4>";
