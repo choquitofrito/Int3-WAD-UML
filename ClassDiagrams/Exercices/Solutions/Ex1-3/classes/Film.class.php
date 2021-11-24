@@ -5,7 +5,7 @@ class Film {
 
     public int $id;
     public string $title;
-    // implementer rélation: un seul Cinema
+    // implementer relation: un seul Cinema
     public Cinema $cinema;
 
 

@@ -4,7 +4,7 @@ class CompteMail {
     public int $id;
     public string $adresse;
     public int $capacite;
-    // implementer la rélation
+    // implementer la relation
     public Utilisateur $utilisateur;
 
     public function __construct (int $id, string $adresse, int $capacite){

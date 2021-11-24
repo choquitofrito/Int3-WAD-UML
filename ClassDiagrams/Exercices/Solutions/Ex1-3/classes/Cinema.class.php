@@ -5,7 +5,7 @@ class Cinema {
     public string $nom;
     public string $ville;
 
-    // implementer la rélation
+    // implementer la relation
     public array $films = [];
 
     public function __construct (int $id, string $nom, string $ville){

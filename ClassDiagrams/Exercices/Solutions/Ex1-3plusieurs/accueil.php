@@ -9,10 +9,17 @@
 <body>
 <?php
     $monCinema = new Cinema (3,"Styx", "Bruxelles");
+    
     $f1 = new Film (4,"Alien");
     $f2 = new Film (5,"Robocop");
-    $monCinema->addFilm ($f1);
-    $monCinema->addFilm ($f2);
+
+    // on ne peut plus faire ceci!! on doit passer par Diffusion!
+    // $monCinema->addFilm ($f1);
+    // $monCinema->addFilm ($f2);
+    
+    $monCinema->addDiffusion (
+        new Diffusion ()
+    );
 
 
 
