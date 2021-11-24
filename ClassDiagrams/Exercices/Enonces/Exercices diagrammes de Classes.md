@@ -1,7 +1,7 @@
 Exercices Diagramme de Classes
 ------------------------------
 
-### Exercice 1
+## Exercice 1
 
 Créez un diagramme de classes pour chaque situation :
 
@@ -32,7 +32,9 @@ Créez un diagramme de classes pour chaque situation :
 
 13. Un agenda et les contacts
 
-### Exercice 2
+<br>
+
+## Exercice 2
 
 Pour chaque situation ci-dessous, proposez une modélisation de la
 réalité.
@@ -49,31 +51,35 @@ réalité.
     plusieurs salariés (les subordonnés) et que le chef est lui-même un
     salarié
 
-### Exercice 3
+<br>
+
+## Exercice 3
 
 1.  Créez un modèle pour représenter les types de véhicules suivants:
     vélos, voitures, trottinettes et camions.
 
-2.  Dans une université il y a des étudiants et des professeurs. Les
+1.  Dans une université il y a des étudiants et des professeurs. Les
     étudiants sont inscrits à au moins un cours et les professeurs
     donnent au moins un cours. Un cours est donné uniquement pour un
     professeur.
 
-3.  Considérer les fonctions des classes Professeur et Étudiant pour
+2.  Considérer les fonctions des classes Professeur et Étudiant pour
     obtenir le nom et l\'adresse de mail (par exemple). Comment est
     qu\'on peut éviter la duplicité de ces fonctions?
 
-4.  Considérer une société où il y a des employés et des managers. Un
+3.  Considérer une société où il y a des employés et des managers. Un
     manager gère un groupe d\'employés (parmi lesquels il n\'y a pas des
     managers!), et il est lui-même un employé. Un manager à certaines
     caractéristiques spéciales comme pouvoir ajouter des employés à son
     groupe et les enlever. Les manages ont un contrat à durée
     indéterminée, contrairement au reste d\'employés.
 
-5.  Considérez, dans l\'exemple précédant, qu\'un manager peut gérer
+4.  Considérez, dans l\'exemple précédant, qu\'un manager peut gérer
     aussi d\'autres managers
 
-### Exercice 4: 
+<br>
+
+## Exercice 4: 
 
 Considérons deux types de moteur: essence et diesel.
 
@@ -104,8 +110,9 @@ a)  Modélisez les classes qui correspondent aux
 
 b)  Implémentez le modèle
 
+<br>
 
-### Exercice 5:
+## Exercice 5:
 
 Cette étude de cas concerne un système simpliﬁé de réservation de vols
 pour une agence de voyages.
