@@ -12,15 +12,15 @@ class TypeManager
 
     public function insert(Type $type): void
     {
-        $sql = "INSERT INTO type (name, minPV, minPA) " .
-            "VALUES (:name, :minPV, :minPA, :maxPV, :maxPA)";
+        $sql = "INSERT INTO type (name, minLP, minAP) " .
+            "VALUES (:name, :minLP, :minAP, :maxLP, :maxAP)";
 
         $requete = $this->bdd->prepare($sql); // renvoie un PDOStatement
         $requete->bindValue(":name", $type->getName());
-        $requete->bindValue(":minPV", $type->getMinPV());
-        $requete->bindValue(":minPA", $type->getMinPA());
-        $requete->bindValue(":maxPV", $type->getMaxPV());
-        $requete->bindValue(":maxPA", $type->getMaxPA());
+        $requete->bindValue(":minLP", $type->getMinLP());
+        $requete->bindValue(":minAP", $type->getMinAP());
+        $requete->bindValue(":maxLP", $type->getMaxLP());
+        $requete->bindValue(":maxAP", $type->getMaxAP());
 
         // si la requête a une erreur on pourra l'afficher avec errorInfo de PDOStatement ($requete)
         // ou de PDO ($bdd) 
@@ -51,7 +51,7 @@ class TypeManager
     {
         $sql = "SELECT * FROM type";
         // on veut obtenir une requête dans cet esprit:
-        // SELECT * from type WHERE name=:name AND minPV=:minPV
+        // SELECT * from type WHERE name=:name AND minLP=:minLP
         if (count($filtres) > 0) {
             $sql = $sql . " WHERE ";
 
@@ -67,7 +67,7 @@ class TypeManager
 
         // on veut faire bindValue de cette manière:
         // $requete->bindValue(":name",$filtres['name']);
-        // $requete->bindValue(":minPV",$filtres['minPV']);
+        // $requete->bindValue(":minLP",$filtres['minLP']);
         foreach ($filtres as $nameFiltre => $valFiltre) {
             $requete->bindValue(":" . $nameFiltre, $valFiltre);
         }
@@ -112,18 +112,18 @@ class TypeManager
     
     public function update (Type $type) : void {
         $sql = "UPDATE type SET name = :name, 
-                                minPV = :minPV,
-                                minPA = :minPA,
-                                maxPV = :maxPV,
-                                maxPA = :maxPA
+                                minLP = :minLP,
+                                minAP = :minAP,
+                                maxLP = :maxLP,
+                                maxAP = :maxAP
                 WHERE id=:id";
         $requete = $this->bdd->prepare($sql);
         $requete->bindValue(":id", $type->getId());
         $requete->bindValue(":name",$type->getName()); 
-        $requete->bindValue(":minPV",$type->getMinPV()); 
-        $requete->bindValue(":minPA",$type->getMinPA());
-        $requete->bindValue(":maxPV",$type->getMaxPV()); 
-        $requete->bindValue(":maxPA",$type->getMaxPA()); 
+        $requete->bindValue(":minLP",$type->getMinLP()); 
+        $requete->bindValue(":minAP",$type->getMinAP());
+        $requete->bindValue(":maxLP",$type->getMaxLP()); 
+        $requete->bindValue(":maxAP",$type->getMaxAP()); 
         $requete->execute();
         
     }

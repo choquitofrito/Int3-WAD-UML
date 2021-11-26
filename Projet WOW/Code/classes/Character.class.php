@@ -4,8 +4,8 @@
 class Character {
     private string $id;
     private string $name;
-    private string $PV;
-    private string $PA;
+    private string $LP;
+    private string $AP;
     private bool $status; // actif = true, inactif = false
 
     // rélation: un Character a un Type
@@ -16,9 +16,9 @@ class Character {
     {
         $this->hydrate($vals);
         
-        // calcul des PV pour ce Personnage
-        $this->PV = rand ($this->getType()->getMinPV(),$this->getType()->getMaxPV());
-        $this->PA = rand ($this->getType()->getMinPA(),$this->getType()->getMaxPA());
+        // calcul des LP pour ce Personnage
+        $this->LP = rand ($this->getType()->getMinLP(),$this->getType()->getMaxLP());
+        $this->AP = rand ($this->getType()->getMinAP(),$this->getType()->getMaxAP());
 
     }
 
@@ -51,21 +51,21 @@ class Character {
     }
 
     /**
-     * Get the value of PV
+     * Get the value of LP
      */ 
-    public function getPV()
+    public function getLP()
     {
-        return $this->PV;
+        return $this->LP;
     }
 
     /**
-     * Set the value of PV
+     * Set the value of LP
      *
      * @return  self
      */ 
-    public function setPV($PV)
+    public function setLP($LP)
     {
-        $this->PV = $PV;
+        $this->LP = $LP;
 
         return $this;
     }
@@ -93,21 +93,21 @@ class Character {
     }
 
     /**
-     * Get the value of PA
+     * Get the value of AP
      */ 
-    public function getPA()
+    public function getAP()
     {
-        return $this->PA;
+        return $this->AP;
     }
 
     /**
-     * Set the value of PA
+     * Set the value of AP
      *
      * @return  self
      */ 
-    public function setPA($PA)
+    public function setAP($AP)
     {
-        $this->PA = $PA;
+        $this->AP = $AP;
 
         return $this;
     }

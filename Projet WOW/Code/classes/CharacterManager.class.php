@@ -12,13 +12,13 @@ class CharacterManager
 
     public function insert(Character $character): void
     {
-        $sql = "INSERT INTO character (name, PV, PA) " .
-            "VALUES (:name, :PV, :PA)";
+        $sql = "INSERT INTO character (name, LP, AP) " .
+            "VALUES (:name, :LP, :AP)";
 
         $requete = $this->bdd->prepare($sql); // renvoie un PDOStatement
         $requete->bindValue(":name", $character->getName());
-        $requete->bindValue(":PV", $character->getPV());
-        $requete->bindValue(":PA", $character->getPA());
+        $requete->bindValue(":LP", $character->getLP());
+        $requete->bindValue(":AP", $character->getAP());
 
         // si la requête a une erreur on pourra l'afficher avec errorInfo de PDOStatement ($requete)
         // ou de PDO ($bdd) 
@@ -49,7 +49,7 @@ class CharacterManager
     {
         $sql = "SELECT * FROM character";
         // on veut obtenir une requête dans cet esprit:
-        // SELECT * from character WHERE name=:name AND PV=:PV
+        // SELECT * from character WHERE name=:name AND LP=:LP
         if (count($filtres) > 0) {
             $sql = $sql . " WHERE ";
 
@@ -65,7 +65,7 @@ class CharacterManager
 
         // on veut faire bindValue de cette manière:
         // $requete->bindValue(":name",$filtres['name']);
-        // $requete->bindValue(":PV",$filtres['PV']);
+        // $requete->bindValue(":LP",$filtres['LP']);
         foreach ($filtres as $nameFiltre => $valFiltre) {
             $requete->bindValue(":" . $nameFiltre, $valFiltre);
         }
@@ -110,14 +110,14 @@ class CharacterManager
     
     public function update (Character $character) : void {
         $sql = "UPDATE character SET name = :name, 
-                                PV = :PV,
-                                PA = :PA 
+                                LP = :LP,
+                                AP = :AP 
                 WHERE id=:id";
         $requete = $this->bdd->prepare($sql);
         $requete->bindValue(":id", $character->getId());
         $requete->bindValue(":name",$character->getName()); 
-        $requete->bindValue(":PV",$character->getPV()); 
-        $requete->bindValue(":PA",$character->getPA()); 
+        $requete->bindValue(":LP",$character->getLP()); 
+        $requete->bindValue(":AP",$character->getAP()); 
         $requete->execute();
         
     }

@@ -15,7 +15,7 @@
     try {
         $bdd = new PDO(DBDRIVER . ':host=' . DBHOST . ';port=' . DBPORT .
             ';dbname=' . DBNAME . ';charset='
-            . DBCHARSET, DBUSER, DBPASS);
+            . DBCHARSET, DBUSER, DBAPSS);
     } catch (Exception $e) {
         // en mode dev, on veut connaitre toutes les infos
         echo $e->getMessage();
@@ -40,18 +40,18 @@
 
     $type1 = new Type ([
         'name'=> 'witch',
-        'minPV'=>15,
-        'minPV'=>15,
-        'minPA'=>5,
-        'maxPA'=>10,
+        'minLP'=>15,
+        'minLP'=>15,
+        'minAP'=>5,
+        'maxAP'=>10,
     ]);
 
     $type2 = new Type ([
         'name'=> 'elf',
-        'minPV'=>10,
-        'minPV'=>20,
-        'minPA'=>8,
-        'maxPA'=>15,
+        'minLP'=>10,
+        'minLP'=>20,
+        'minAP'=>8,
+        'maxAP'=>15,
     ]);
 
     $p1Manager = new PlayerManager($bdd);
@@ -66,17 +66,17 @@
     $c1 = new Character([
         'name' => 'Witch Stefania',
         'type' => $type1 // ici on injecte le type
-        // PV et PA sont générés dans le constructeur en utilisant le random du Type!
+        // LP et AP sont générés dans le constructeur en utilisant le random du Type!
     ]);
     $c2 = new Character([
         'name' => 'Witch Laure',
-        'type' => $type1 // ici on injecte le type
-        // PV et PA sont générés dans le constructeur en utilisant le random du Type!
+        'type' => $type2 // ici on injecte le type
+        // LP et AP sont générés dans le constructeur en utilisant le random du Type!
     ]);
     $c3 = new Character([
         'name' => 'Witch Ylenia',
         'type' => $type1 // ici on injecte le type
-        // PV et PA sont générés dans le constructeur en utilisant le random du Type!
+        // LP et AP sont générés dans le constructeur en utilisant le random du Type!
     ]);
 
     $chManager->insert ($c1);

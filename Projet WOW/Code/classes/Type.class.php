@@ -5,10 +5,10 @@ class Type
 {
     private string $id;
     private string $name;
-    private int $minPV;
-    private int $maxPV;
-    private int $minPA;
-    private int $maxPA;
+    private int $minLP;
+    private int $maxLP;
+    private int $minAP;
+    private int $maxAP;
     
 
     // rélation: un Type a un Type
@@ -50,21 +50,21 @@ class Type
     }
 
     /**
-     * Get the value of PV
+     * Get the value of LP
      */
-    public function getPV()
+    public function getLP()
     {
-        return $this->PV;
+        return $this->LP;
     }
 
     /**
-     * Set the value of PV
+     * Set the value of LP
      *
      * @return  self
      */
-    public function setPV($PV)
+    public function setLP($LP)
     {
-        $this->PV = $PV;
+        $this->LP = $LP;
 
         return $this;
     }
@@ -92,61 +92,61 @@ class Type
     }
 
     /**
-     * Get the value of PA
+     * Get the value of AP
      */
-    public function getPA()
+    public function getAP()
     {
-        return $this->PA;
+        return $this->AP;
     }
 
     /**
-     * Set the value of PA
+     * Set the value of AP
      *
      * @return  self
      */
-    public function setPA($PA)
+    public function setAP($AP)
     {
-        $this->PA = $PA;
+        $this->AP = $AP;
 
         return $this;
     }
 
     /**
-     * Get the value of minPV
+     * Get the value of minLP
      */
-    public function getMinPV()
+    public function getMinLP()
     {
-        return $this->minPV;
+        return $this->minLP;
     }
 
     /**
-     * Set the value of minPV
+     * Set the value of minLP
      *
      * @return  self
      */
-    public function setMinPV($minPV)
+    public function setMinLP($minLP)
     {
-        $this->minPV = $minPV;
+        $this->minLP = $minLP;
 
         return $this;
     }
 
     /**
-     * Get the value of maxPV
+     * Get the value of maxLP
      */
-    public function getMaxPV()
+    public function getMaxLP()
     {
-        return $this->maxPV;
+        return $this->maxLP;
     }
 
     /**
-     * Set the value of maxPV
+     * Set the value of maxLP
      *
      * @return  self
      */
-    public function setMaxPV($maxPV)
+    public function setMaxLP($maxLP)
     {
-        $this->maxPV = $maxPV;
+        $this->maxLP = $maxLP;
 
         return $this;
     }
@@ -178,41 +178,41 @@ class Type
     }
 
     /**
-     * Get the value of minPA
+     * Get the value of minAP
      */ 
-    public function getMinPA()
+    public function getMinAP()
     {
-        return $this->minPA;
+        return $this->minAP;
     }
 
     /**
-     * Set the value of minPA
+     * Set the value of minAP
      *
      * @return  self
      */ 
-    public function setMinPA($minPA)
+    public function setMinAP($minAP)
     {
-        $this->minPA = $minPA;
+        $this->minAP = $minAP;
 
         return $this;
     }
 
     /**
-     * Get the value of maxPA
+     * Get the value of maxAP
      */ 
-    public function getMaxPA()
+    public function getMaxAP()
     {
-        return $this->maxPA;
+        return $this->maxAP;
     }
 
     /**
-     * Set the value of maxPA
+     * Set the value of maxAP
      *
      * @return  self
      */ 
-    public function setMaxPA($maxPA)
+    public function setMaxAP($maxAP)
     {
-        $this->maxPA = $maxPA;
+        $this->maxAP = $maxAP;
 
         return $this;
     }
