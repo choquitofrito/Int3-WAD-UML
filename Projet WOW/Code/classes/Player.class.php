@@ -6,8 +6,8 @@ class Player {
     private string $name;
     private string $email;
     // rélations: 
-    private array $characters;
-
+    private array $characters = [];
+    private Team $team;
     
     public function __construct(array $vals)
     {
@@ -85,6 +85,8 @@ class Player {
     // rajouter un Character
     public function addCharacter (Character $character){
         $this->characters[] = $character;
+        // la relation dans l'autre sens
+        $character->setPlayer($this);
     }
 
     /**
@@ -103,6 +105,26 @@ class Player {
     public function setId($id)
     {
         $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of team
+     */ 
+    public function getTeam()
+    {
+        return $this->team;
+    }
+
+    /**
+     * Set the value of team
+     *
+     * @return  self
+     */ 
+    public function setTeam($team)
+    {
+        $this->team = $team;
 
         return $this;
     }

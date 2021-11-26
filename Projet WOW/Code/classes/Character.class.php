@@ -7,10 +7,11 @@ class Character
     private string $name;
     private string $LP;
     private string $AP;
-    private bool $status; // actif = true, inactif = false
+    private bool $status = true; // actif = true, inactif = false
 
-    // rélation: un Character a un Type
+    // relation: un Character a un Type
     private Type $type;
+    private Player $player;
 
     // private function __construct (int $id,
     //                             string $name, // manque
@@ -25,9 +26,9 @@ class Character
         $this->hydrate($vals);
 
         // calcul des LP pour ce Personnage
+        // $this->LP = rand($this->type->getMinLP(), $this->getType()->getMaxLP()); // pareil...
         $this->LP = rand($this->getType()->getMinLP(), $this->getType()->getMaxLP());
         $this->AP = rand($this->getType()->getMinAP(), $this->getType()->getMaxAP());
-        $this->status = true;
     }
 
     public function hydrate(array $vals)
@@ -165,5 +166,25 @@ class Character
         echo "<p><b>Character : " . $this->getType()->getName() . " " . $this->getName() . "<br></b></p>";
         echo "<p>LP: " . $this->getLP() . "</p>";
         echo "<p>AP: " . $this->getAP() . "</p>";
+    }
+
+    /**
+     * Get the value of player
+     */ 
+    public function getPlayer()
+    {
+        return $this->player;
+    }
+
+    /**
+     * Set the value of player
+     *
+     * @return  self
+     */ 
+    public function setPlayer($player)
+    {
+        $this->player = $player;
+
+        return $this;
     }
 }

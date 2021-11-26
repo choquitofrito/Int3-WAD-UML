@@ -54,12 +54,18 @@
     $typeManager->insert($type1);
     $typeManager->insert($type2);
 
-    $p1Manager = new PlayerManager($bdd);
+    $playerManager = new PlayerManager($bdd);
     $p1 = new Player([
         'name' => 'player1',
         'email' => 'p1@fastmail.com'
     ]);
-    $p1Manager->insert($p1);
+ 
+    $p2 = new Player([
+        'name' => 'player2',
+        'email' => 'p2@fastmail.com'
+    ]);
+    $playerManager->insert($p1);
+    $playerManager->insert($p2);
 
 
     $chManager = new CharacterManager($bdd);
@@ -87,7 +93,7 @@
     // rajouter les Characters au Player
     $p1->addCharacter($c1);
     $p1->addCharacter($c2);
-    $p1->addCharacter($c3);
+    $p2->addCharacter($c3);
 
     $c1->afficher();
     $c2->afficher();
@@ -105,6 +111,21 @@
     else {
         echo "<h2>Le match est nul</h2>";
     }
+
+    $team1 = new Team (['name'=> 'killerWads',
+                        'score'=> 0]);
+
+    $team2 = new Team (['name'=> 'killerChats',
+                        'score'=> 0]);
+    // $teamManager = new TeamManager($bdd);
+    // $teamManager->insert ($team1);
+    // $teamManager->insert ($team2);
+
+
+
+
+    
+
 
     ?>
 </body>

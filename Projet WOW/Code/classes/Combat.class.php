@@ -126,8 +126,6 @@ class Combat
         // Atack: enlever de points de vie
         // base, sans random
         echo "<h3>Attack!<h3>";
-
-
         $pourcentageErrorAttackC1 = rand (0,20) / 100; // % rater le coup
         $APChar1 = $this->getParticipants()[0]->getAP() - $this->getParticipants()[0]->getAP() * $pourcentageErrorAttackC1;
         $pourcentageErrorAttackC2 = rand (0,20) / 100;

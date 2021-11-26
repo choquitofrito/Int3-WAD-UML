@@ -12,7 +12,7 @@ class Type
     
 
     // rélation: un Type a de Characters
-    private array $characters;
+    private array $characters = [];
 
 
     public function __construct(array $vals)
@@ -175,6 +175,8 @@ class Type
     public function addCharacter(Character $character)
     {
         $this->characters[] = $character;
+        // la relation dans l'autre sens
+        $character->setType ($this);
     }
 
     /**
