@@ -12,7 +12,7 @@ class TypeManager
 
     public function insert(Type $type): void
     {
-        $sql = "INSERT INTO type (name, minLP, minAP) " .
+        $sql = "INSERT INTO type (name, minLP, minAP, maxLP,maxAP) " .
             "VALUES (:name, :minLP, :minAP, :maxLP, :maxAP)";
 
         $requete = $this->bdd->prepare($sql); // renvoie un PDOStatement

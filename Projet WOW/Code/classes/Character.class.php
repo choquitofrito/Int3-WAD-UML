@@ -15,6 +15,7 @@ class Character {
     public function __construct(array $vals)
     {
         $this->hydrate($vals);
+        var_dump ($vals);
         
         // calcul des LP pour ce Personnage
         $this->LP = rand ($this->getType()->getMinLP(),$this->getType()->getMaxLP());

@@ -12,13 +12,17 @@ class CharacterManager
 
     public function insert(Character $character): void
     {
-        $sql = "INSERT INTO character (name, LP, AP) " .
-            "VALUES (:name, :LP, :AP)";
+        // attention aux guillemets dans le nom du tableau ('character' est un mot reservé)
+        $sql = "INSERT INTO `character` (name, LP, AP, id_type) " .
+            "VALUES (:name, :LP, :AP, :id_type)";
 
         $requete = $this->bdd->prepare($sql); // renvoie un PDOStatement
         $requete->bindValue(":name", $character->getName());
         $requete->bindValue(":LP", $character->getLP());
         $requete->bindValue(":AP", $character->getAP());
+        $requete->bindValue(":id_type", $character->getType()->getId());
+    
+
 
         // si la requête a une erreur on pourra l'afficher avec errorInfo de PDOStatement ($requete)
         // ou de PDO ($bdd) 
@@ -111,13 +115,16 @@ class CharacterManager
     public function update (Character $character) : void {
         $sql = "UPDATE character SET name = :name, 
                                 LP = :LP,
-                                AP = :AP 
+                                AP = :AP,
+                                id_type = :id_type 
                 WHERE id=:id";
         $requete = $this->bdd->prepare($sql);
         $requete->bindValue(":id", $character->getId());
         $requete->bindValue(":name",$character->getName()); 
         $requete->bindValue(":LP",$character->getLP()); 
-        $requete->bindValue(":AP",$character->getAP()); 
+        $requete->bindValue(":AP",$character->getAP());
+        $requete->bindValue(":id_type", $character->getType()->getId());
+
         $requete->execute();
         
     }

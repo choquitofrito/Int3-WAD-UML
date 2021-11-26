@@ -11,7 +11,7 @@ class Type
     private int $maxAP;
     
 
-    // rélation: un Type a un Type
+    // rélation: un Type a de Characters
     private array $characters;
 
 

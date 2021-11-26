@@ -30,26 +30,31 @@
     // Dans ce script:
     // 1. Créer un Type de Character et le stocker dans la BD
     // 2. Créer un Player et le stocker dans la BD
-    // 3. Créer trois Character et le stocker dans la BD
+    // 3. Créer trois Character et le stocker dans la BD, les rajouter au Player
+    // 4. Créer un Combat entre deux Character
 
     // créons un Type, puis on commente les lignes pour ne pas créer de doublons dans la BD
-    $type1 = new TypeManager ($bdd);
+    $typeManager = new TypeManager ($bdd);
 
     $type1 = new Type ([
         'name'=> 'witch',
-        'minLP'=>15,
-        'minLP'=>15,
-        'minAP'=>5,
-        'maxAP'=>10,
+        'minLP'=>18,
+        'maxLP'=>20,
+        'minAP'=>10,
+        'maxAP'=>15,
     ]);
 
     $type2 = new Type ([
         'name'=> 'elf',
-        'minLP'=>10,
-        'minLP'=>20,
+        'minLP'=>17,
+        'maxLP'=>20,
         'minAP'=>8,
         'maxAP'=>15,
     ]);
+    $typeManager->insert ($type1);
+    $typeManager->insert ($type2);
+
+    
 
     $p1Manager = new PlayerManager($bdd);
     $p1 = new Player([
@@ -57,8 +62,8 @@
         'email' => 'p1@fastmail.com'
     ]);
     $p1Manager->insert($p1);
-
-
+    
+    
     $chManager = new CharacterManager($bdd);
     $c1 = new Character([
         'name' => 'Witch Stefania',
@@ -79,6 +84,22 @@
     $chManager->insert ($c1);
     $chManager->insert ($c2);
     $chManager->insert ($c3);
+
+    // rajouter les Characters au Player
+    $p1->addCharacter($c1);
+    $p1->addCharacter($c2);
+    $p1->addCharacter($c3);
+
+    // créer un Combat
+    $combat1 = new Combat(new DateTime()); // new DateTime ("2001-4-20");
+    $combat1->addParticipant ($p1);
+    $combat1->addParticipant ($p2);
+    $combat1->launch(); // lancera à l'intérieur un setWinner();
+    
+
+    // lancer le combat. 
+    $combat1->launch(); // on peut identifier toujours le Character winner car on a l'id du Character
+
 
 
 
