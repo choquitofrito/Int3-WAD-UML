@@ -6,5 +6,5 @@ const DBPORT = 3306;
 const DBHOST = "localhost";
 const DBCHARSET = "utf8";
 const DBDRIVER = "mysql";
-const DBNAME = "projetuml";
+const DBNAME = "wow";
 
