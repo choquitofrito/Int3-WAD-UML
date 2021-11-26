@@ -12,7 +12,7 @@ class TeamManager
 
     public function insert(Team $team): void
     {
-        $sql = "INSERT INTO team (name) " .
+        $sql = "INSERT INTO team (name, score) " .
             "VALUES (:name, :score)";
 
         $requete = $this->bdd->prepare($sql); // renvoie un PDOStatement

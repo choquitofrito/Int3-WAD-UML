@@ -59,7 +59,7 @@
         'name' => 'player1',
         'email' => 'p1@fastmail.com'
     ]);
- 
+
     $p2 = new Player([
         'name' => 'player2',
         'email' => 'p2@fastmail.com'
@@ -105,26 +105,33 @@
     $combat1->combattre();
 
     // si winner n'est pas null (ou loser n'est pas null), le match n'est pas null
-    if (!is_null($combat1->getWinner())){
-        echo "<h2>The winner is ". $combat1->getWinner()->getName() . "!!</h2>";
-    } 
-    else {
+    if (!is_null($combat1->getWinner())) {
+        echo "<h2>The winner is " . $combat1->getWinner()->getName() . "!!</h2>";
+    } else {
         echo "<h2>Le match est nul</h2>";
     }
 
-    $team1 = new Team (['name'=> 'killerWads',
-                        'score'=> 0]);
+    $team1 = new Team([
+        'name' => 'killerWads',
+        'score' => 0
+    ]);
 
-    $team2 = new Team (['name'=> 'killerChats',
-                        'score'=> 0]);
-    // $teamManager = new TeamManager($bdd);
-    // $teamManager->insert ($team1);
-    // $teamManager->insert ($team2);
+    $team2 = new Team([
+        'name' => 'killerChats',
+        'score' => 0
+    ]);
+
+    $team1->addPlayer($p1);
+    $team1->addPlayer($p2);
+
+    $teamManager = new TeamManager($bdd);
+    $teamManager->insert ($team1);
+    $teamManager->insert ($team2);
 
 
 
 
-    
+
 
 
     ?>
