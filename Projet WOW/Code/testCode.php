@@ -64,15 +64,21 @@
 
     $chManager = new CharacterManager($bdd);
     $c1 = new Character([
-        'name' => 'Elf 1',
+        'name' => 'Witch Stefania',
         'type' => $type1 // ici on injecte le type
         // PV et PA sont générés dans le constructeur en utilisant le random du Type!
     ]);
-    $c1 = new Character([
-        'name' => 'Elf 1',
+    $c2 = new Character([
+        'name' => 'Witch Laure',
         'type' => $type1 // ici on injecte le type
         // PV et PA sont générés dans le constructeur en utilisant le random du Type!
     ]);
+    $c3 = new Character([
+        'name' => 'Witch Ylenia',
+        'type' => $type1 // ici on injecte le type
+        // PV et PA sont générés dans le constructeur en utilisant le random du Type!
+    ]);
+
     $chManager->insert ($c1);
 
 
