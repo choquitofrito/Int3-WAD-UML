@@ -22,18 +22,15 @@
         die();
     }
 
-
     // include autoload (classes)
     include "./vendor/autoload.php";
-    
+ 
 
     
     // Dans ce script:
     // 1. Créer un Type de Character et le stocker dans la BD
     // 2. Créer un Player et le stocker dans la BD
-    // 3. Créer deux Character et le stocker dans la BD
-
-
+    // 3. Créer trois Character et le stocker dans la BD
 
     // créons un Type, puis on commente les lignes pour ne pas créer de doublons dans la BD
     $type1 = new TypeManager ($bdd);
@@ -70,17 +67,18 @@
     ]);
     $c2 = new Character([
         'name' => 'Witch Laure',
-        'type' => $type2 // ici on injecte le type
+        'type' => $type1 
         // LP et AP sont générés dans le constructeur en utilisant le random du Type!
     ]);
     $c3 = new Character([
-        'name' => 'Witch Ylenia',
-        'type' => $type1 // ici on injecte le type
+        'name' => 'Elf Ylenia',
+        'type' => $type2 // ici on injecte le type
         // LP et AP sont générés dans le constructeur en utilisant le random du Type!
     ]);
 
     $chManager->insert ($c1);
-
+    $chManager->insert ($c2);
+    $chManager->insert ($c3);
 
 
 
