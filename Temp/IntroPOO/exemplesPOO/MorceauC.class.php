@@ -1,4 +1,5 @@
 <?php
+declare (strict_types = 1);
 
 class MorceauC {
     // structure de données : proprietés de la classe
