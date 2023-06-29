@@ -7,7 +7,7 @@ class Personne {
     public string $hobby;
 
     // méthodes
-    public function sePresenter(){
+    public function sePresenter() : void {
         print ("<h3>Bonjour, je suis " . $this->nom .  
         " et j'aime " . $this->hobby .  "</h3>");
     }

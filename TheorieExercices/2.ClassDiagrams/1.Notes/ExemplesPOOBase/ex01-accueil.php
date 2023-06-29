@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-    include "./Personne.php";
+    include "./Classes/Personne.php";
 
     $p1 = new Personne();
     
