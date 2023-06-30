@@ -22,15 +22,13 @@ Créez un diagramme de classes pour chaque situation :
 
 8.  Les imprimantes et les écrans sont tous les deux des périphériques
 
-9.  Un DVD et les morceaux
+9.  Un CD et ses morceaux 
 
 10. Une personne utilise un langage de programmation dans un projet
 
 11. Un client réalise des réservations dans un hôtel
 
-12. Un laptop contient un lecteur de DVD
-
-13. Un agenda et les contacts
+13. Un repertoire et les contacts
 
 <br>
 

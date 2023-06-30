@@ -6,6 +6,7 @@ class Societe {
     public string $nom;
     public string $domaine;
 
+    // association 1..* avec Personne
     public array $arrayEmployes = [];
 
     // méthodes
@@ -15,7 +16,10 @@ class Societe {
     }
 
     public function addEmploye (Personne $p){
+        // rélation sens Societe->Personne
         $this->arrayEmployes[] = $p;
+        // rélation sens Personne->Societe
+        $p->setSociete($this);
     }
 
     public function afficherEmployes (){

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <?php
     include "./Societe.php";
@@ -23,10 +25,24 @@
     $p2->hobby = "musique";
 
     // on rajout des employés (Personne)
-    $s1->addEmploye ($p1);
-    $s1->addEmploye ($p2);
+    $s1->addEmploye($p1);
+    $s1->addEmploye($p2);
 
-    $s1->afficherEmployes();
+    // fixer à la main la societé
+    // $p1->setSociete($s1);
+    // $p2->setSociete($s1);
+    
+    
+    $p1->obtenirSociete()->afficher();
+    $p2->obtenirSociete()->afficher();
+
+    // var_dump ($p1->obtenirSociete());
+    
+    
+    // $s1->afficherEmployes();
+
+
+
 
 
     // var_dump ($s1);
@@ -34,9 +50,10 @@
 
 
 
-    
-    
-    
+
+
+
     ?>
 </body>
+
 </html>
