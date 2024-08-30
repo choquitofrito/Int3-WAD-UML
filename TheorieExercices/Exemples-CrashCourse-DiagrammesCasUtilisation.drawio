@@ -1,0 +1,362 @@
+<mxfile host="Electron" modified="2024-08-30T09:05:36.873Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="z-9PDGdQLhcamsOY2tPV" version="24.4.0" type="device">
+  <diagram name="Page-1" id="RISNlhzIUUWohTVO3Xna">
+    <mxGraphModel dx="714" dy="423" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="z0F2rWXhtOA_MolimiAm-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;curved=1;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-1" target="z0F2rWXhtOA_MolimiAm-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="230" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-2" value="acheter un meuble" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="180" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;curved=1;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-9" target="z0F2rWXhtOA_MolimiAm-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-9" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="380" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-10" value="se connecter" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="270" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;curved=1;" edge="1" parent="1" target="z0F2rWXhtOA_MolimiAm-13" source="z0F2rWXhtOA_MolimiAm-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="600" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-13" value="payer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="400" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" target="z0F2rWXhtOA_MolimiAm-15" source="z0F2rWXhtOA_MolimiAm-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="520" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-15" value="rechercher un article" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="600" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" target="z0F2rWXhtOA_MolimiAm-17" source="z0F2rWXhtOA_MolimiAm-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="45" y="550" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-17" value="rajouter au panier" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="620" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" target="z0F2rWXhtOA_MolimiAm-19" source="z0F2rWXhtOA_MolimiAm-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="540" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-19" value="enlever article du panier" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="285" y="690" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-20" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" target="z0F2rWXhtOA_MolimiAm-21" source="z0F2rWXhtOA_MolimiAm-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="400" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-21" value="taper code de réduction" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="490" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-22" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-13" target="z0F2rWXhtOA_MolimiAm-10">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="370" y="751.1034314385776" as="sourcePoint" />
+            <mxPoint x="600" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-24" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-21" target="z0F2rWXhtOA_MolimiAm-13">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="250" y="550" as="sourcePoint" />
+            <mxPoint x="410" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-25" target="z0F2rWXhtOA_MolimiAm-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-25" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="765" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-29" value="enlever article du panier" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="760" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-31" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-25" target="z0F2rWXhtOA_MolimiAm-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="250" y="650" as="sourcePoint" />
+            <mxPoint x="150" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;curved=1;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-36" target="z0F2rWXhtOA_MolimiAm-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-36" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="1060" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-37" value="se connecter" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="405" y="950" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-39" value="payer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="1080" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-40" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-36" target="z0F2rWXhtOA_MolimiAm-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5" y="1200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-41" value="rechercher un article" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="1375" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-43" value="rajouter au panier" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="1340" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-44" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-36" target="z0F2rWXhtOA_MolimiAm-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-5" y="1220" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-45" value="enlever article du panier" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1375" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-46" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-36" target="z0F2rWXhtOA_MolimiAm-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="255" y="1080" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-47" value="taper code de réduction" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="625" y="1170" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-48" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-39" target="z0F2rWXhtOA_MolimiAm-37">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="335" y="1431.1034314385774" as="sourcePoint" />
+            <mxPoint x="565" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-49" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-47" target="z0F2rWXhtOA_MolimiAm-39">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="215" y="1230" as="sourcePoint" />
+            <mxPoint x="375" y="1230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-51" target="z0F2rWXhtOA_MolimiAm-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-51" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="1445" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-52" value="enlever article du panier" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="485" y="1440" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-53" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-51" target="z0F2rWXhtOA_MolimiAm-36">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="215" y="1330" as="sourcePoint" />
+            <mxPoint x="115" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-54" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" target="z0F2rWXhtOA_MolimiAm-55">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="1103" as="sourcePoint" />
+            <mxPoint x="370" y="1220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-55" value="acheter un meuble" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1190" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-56" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-55" target="z0F2rWXhtOA_MolimiAm-43">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="576" y="1093" as="sourcePoint" />
+            <mxPoint x="514" y="1027" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-57" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-55" target="z0F2rWXhtOA_MolimiAm-39">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="471" y="1298" as="sourcePoint" />
+            <mxPoint x="562" y="1357" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-58" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-55" target="z0F2rWXhtOA_MolimiAm-41">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="471" y="1298" as="sourcePoint" />
+            <mxPoint x="562" y="1357" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-61" value="se connecter" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="1560" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-62" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-61" target="z0F2rWXhtOA_MolimiAm-63">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="204" y="1637" as="sourcePoint" />
+            <mxPoint x="600" y="1600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-63" value="chercher meuble" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1640" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-64" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-63" target="z0F2rWXhtOA_MolimiAm-65">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="449" y="1624" as="sourcePoint" />
+            <mxPoint x="440" y="1780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-65" value="payer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="1670" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-66" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="125" y="1570" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-66" target="z0F2rWXhtOA_MolimiAm-61">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="1485" as="sourcePoint" />
+            <mxPoint x="495" y="1485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-70" value="Eviter!!" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=#b85450;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="170" y="1520" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-71" value="se connecter" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="292.5" y="1840" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-73" value="consulter evenements" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="542.5" y="1920" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-75" value="payer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="235" y="2020" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-76" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="107.5" y="1850" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-76" target="z0F2rWXhtOA_MolimiAm-71">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="117.5" y="1765" as="sourcePoint" />
+            <mxPoint x="477.5" y="1765" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-79" value="Eviter!!" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=#b85450;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="155" y="1790" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-80" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-75" target="z0F2rWXhtOA_MolimiAm-71">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="310" y="1910" as="sourcePoint" />
+            <mxPoint x="470" y="1910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-81" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-73" target="z0F2rWXhtOA_MolimiAm-71">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="326" y="2030" as="sourcePoint" />
+            <mxPoint x="362" y="1920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-82" value="créer événement" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="491.5" y="2016" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-83" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-82" target="z0F2rWXhtOA_MolimiAm-71">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="275" y="2126" as="sourcePoint" />
+            <mxPoint x="370" y="1990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-88" value="lire mails" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="75" y="2390" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-89" value="se connecter" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="2210" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-90" value="envoyer mail" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="2260" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-97" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-91" target="z0F2rWXhtOA_MolimiAm-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-98" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-91" target="z0F2rWXhtOA_MolimiAm-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-91" target="z0F2rWXhtOA_MolimiAm-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-91" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="85" y="2140" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-91" target="z0F2rWXhtOA_MolimiAm-88">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="2055" as="sourcePoint" />
+            <mxPoint x="455" y="2055" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-95" value="effacer mail" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="469" y="2306" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-100" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-95" target="z0F2rWXhtOA_MolimiAm-89">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="485" y="2420" as="sourcePoint" />
+            <mxPoint x="333" y="2436" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-101" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-90" target="z0F2rWXhtOA_MolimiAm-89">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="567" y="2317" as="sourcePoint" />
+            <mxPoint x="582" y="2289" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-102" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-88" target="z0F2rWXhtOA_MolimiAm-89">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="351" y="2336" as="sourcePoint" />
+            <mxPoint x="541" y="2274" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-114" value="lire mails" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="52.5" y="2740" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-115" value="se connecter" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="2580" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-116" value="envoyer mail" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="2810" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-119" target="z0F2rWXhtOA_MolimiAm-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-119" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="85" y="2510" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-121" value="effacer mail" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="2770" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" target="z0F2rWXhtOA_MolimiAm-126">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="2550" as="sourcePoint" />
+            <mxPoint x="290" y="2640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-126" value="gérer son mail" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215" y="2600" width="210" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-127" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-114" target="z0F2rWXhtOA_MolimiAm-126">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="2690" as="sourcePoint" />
+            <mxPoint x="450" y="2690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-128" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-116" target="z0F2rWXhtOA_MolimiAm-126">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="178" y="2758" as="sourcePoint" />
+            <mxPoint x="256" y="2713" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-129" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-121" target="z0F2rWXhtOA_MolimiAm-126">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="306" y="2820" as="sourcePoint" />
+            <mxPoint x="320" y="2730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z0F2rWXhtOA_MolimiAm-131" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1" source="z0F2rWXhtOA_MolimiAm-126" target="z0F2rWXhtOA_MolimiAm-115">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="2690" as="sourcePoint" />
+            <mxPoint x="450" y="2690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
